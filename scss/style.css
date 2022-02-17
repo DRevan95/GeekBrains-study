@@ -1,0 +1,316 @@
+/*================product=================*/
+.ware {
+  margin: 0;
+  padding: 0;
+}
+.ware-carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 777px;
+  min-height: 624px;
+  width: 100%;
+  background-color: #f7f7f7;
+  background-image: url(../img/product/CarouselGirl.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.ware-carousel-btn {
+  width: 47px;
+  height: 47px;
+  display: flex;
+  border: none;
+  background: rgba(42, 42, 42, 0.15);
+}
+.ware-carousel-btn svg {
+  width: 12.4px;
+  height: 21.7px;
+  margin: auto;
+  fill: #000000;
+}
+.ware-carousel-btn:hover svg {
+  fill: #f16d7f;
+}
+.ware-carousel-btn:active {
+  background-color: transparent;
+}
+.ware-carousel-btn:active svg {
+  fill: red;
+}
+.ware-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1141px;
+  width: 100%;
+  padding: 65px 295px 65px;
+  margin: -65px auto 128px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  text-align: center;
+  border: 1px solid #EAEAEA;
+}
+.ware-info-title {
+  margin: 0;
+  width: 148px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f16d7f;
+  text-transform: uppercase;
+  position: relative;
+}
+.ware-info-title::after {
+  content: "";
+  display: block;
+  width: 63px;
+  height: 3px;
+  background-color: #EF5B70;
+  position: absolute;
+  bottom: -12.1px;
+  left: 41.5px;
+}
+.ware-info-subtitle {
+  margin: 28px 0 48px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+  text-transform: uppercase;
+}
+.ware-info-article {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5E5E5E;
+  margin-bottom: 33px;
+}
+.ware-info-price {
+  height: 29.25px;
+  width: 100%;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+  margin: 0 0 130px 0;
+  position: relative;
+}
+.ware-info-price::after {
+  content: "";
+  display: block;
+  width: 640px;
+  height: 1px;
+  background-color: #eaeaea;
+  position: absolute;
+  bottom: -65px;
+  left: -48px;
+}
+.ware-info-filters {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-width: 373px;
+  width: 100%;
+}
+.ware-info-item {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+.ware-info-item svg {
+  fill: #6f6e6e;
+}
+.ware-info-btn {
+  width: 211px;
+  height: 47.4px;
+  background-color: transparent;
+  border: 1px solid #ff6a6a;
+  display: flex;
+  margin: 49px 0 0 0;
+}
+.ware-info-btn svg {
+  margin: auto;
+  fill: #ef5b70;
+}
+.ware-info-btn span {
+  margin: auto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+}
+.ware-info-btn:hover {
+  background-color: grey;
+  border: none;
+}
+.ware-info-btn:hover svg {
+  fill: #fff;
+}
+.ware-info-btn:hover span {
+  color: #fff;
+}
+.ware-info-btn:active {
+  background-color: black;
+  border: none;
+}
+.ware-info-btn:active svg {
+  fill: red;
+}
+.ware-info-btn:active span {
+  color: red;
+}
+
+.ware-cards {
+  margin: 0 auto 128px;
+}
+
+/*======================cart====================*/
+.cart-heading {
+  height: 148px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #F8F3F4;
+  margin: 0 0 96px 0;
+}
+.cart-heading-txt {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+}
+
+.cart {
+  display: flex;
+}
+.cart-product {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 306px;
+  filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+}
+.cart-product:not(:last-child) {
+  margin: 0 0 40px 0;
+}
+.cart-product:last-child {
+  margin: 0 0 72px 0;
+}
+.cart-product-img {
+  height: 100%;
+}
+.cart-product-list {
+  max-width: 390px;
+  width: 100%;
+  background: #FFFFFF;
+  padding: 22px 97px 62px 31px;
+  box-sizing: border-box;
+}
+.cart-product-list-title {
+  width: 80%;
+  text-transform: uppercase;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+}
+.cart-product-list-item {
+  text-transform: none;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+}
+.cart-product-list-item:first-child {
+  margin-top: 42px;
+}
+.cart-product-list-item span {
+  color: #6f6e6e;
+}
+.cart-product-list-item:first-child span {
+  color: #ef5b70;
+}
+.cart-product-list-item:last-child {
+  position: relative;
+}
+.cart-product-list-item:last-child::after {
+  content: "2";
+  display: block;
+  width: 44px;
+  height: 25px;
+  border: 1px solid #eaeaea;
+  position: absolute;
+  top: 0px;
+  right: 48px;
+  text-align: center;
+}
+.cart-product-list-item:not(:last-child) {
+  margin-bottom: 6px;
+}
+.cart-product-btn {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 28px;
+  right: 22px;
+}
+.cart-product-btn::after, .cart-product-btn::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: #575757;
+  border-radius: 3px;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 5px;
+  left: -5px;
+}
+.cart-product-btn::before {
+  transform: rotate(45deg);
+}
+.cart-product-btn:hover::after, .cart-product-btn:hover::before {
+  background-color: #ef5b70;
+}
+.cart-product-btn:active::after, .cart-product-btn:active::before {
+  background-color: #ff000e;
+}
+.cart-left {
+  max-width: 652px;
+}
+.cart-left-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-left-buttons button {
+  max-width: 235px;
+  width: 100%;
+  height: 50px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  background-color: transparent;
+  border: 1px solid #a4a4a4;
+}
+.cart-left-buttons button:hover {
+  background-color: #4d4d4d;
+  color: #f16d7f;
+}
+.cart-left-buttons button:active {
+  background-color: #6f6e6e;
+  color: #ff000e;
+}/*# sourceMappingURL=style.css.map */
