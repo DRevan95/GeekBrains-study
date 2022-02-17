@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="style/normalize.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
@@ -53,71 +53,60 @@
     <main>
         <section class="cart-heading">
             <div class="container">
-                <h2 class="cart-heading-txt">Registration</h2>
+                <h2 class="cart-heading-txt">Shopping cart</h2>
             </div>
         </section>
-        <section class="registration container">
-            <div class="registration-left">
-                <form class="reg-form" action="#" method="post">
-                    <fieldset class="reg-form-border">
-                        <legend class="reg-form-title">Your Name</legend>
-                        <input class="reg-form-item" type="text" placeholder="First Name">
-                        <input class="reg-form-item" type="text" placeholder="Last Name">
-                    </fieldset>
-                    <fieldset class="reg-form-border">
-                        <label class="reg-form-gender">
-                            <input type="radio" name="gender"> Male
-                        </label>
-                        <label class="reg-form-gender">
-                            <input type="radio" name="gender"> Female
-                        </label>
-                        <label class="reg-form-gender">
-                            <input type="radio" name="gender">Others
-                        </label>
-                    </fieldset>
-                    <fieldset class="reg-form-border">
-                        <legend class="reg-form-title">Login details</legend>
-                        <input class="reg-form-item" type="email" placeholder="Email">
-                        <input class="reg-form-item" id="reg-password" type="password" placeholder="Password">
-                        <label for="reg-password" class="reg-form-txt">
-                            Please use 8 or more characters, with at least 1 number and a mixture
-                            of uppercase and lowercase letters
-                        </label>
-                    </fieldset>
-                    <div class="reg-form-button">
-                        <input class="reg-form-btn" type="submit" value="Join now">
-                        <svg class="reg-form-button-arrow" width="17" height="10" viewBox="0 0 17 10"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M11.54 0.208095C11.6058 0.142131 11.684 0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 0 12.2269 0.01838 12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589 4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001 5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543 9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389 11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091 11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503 0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217 0.352055 11.474 0.273891 11.54 0.208095Z" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z" />
-                        </svg>
+        <section class="cart container">
+            <div class="cart-left">
+                <article class="cart-product">
+                    <img class="cart-product-img" src="img/cart/breeches.jpg" alt="breeches" height="306">
+                    <div class="cart-product-list">
+                        <h3>Mango people t-shirt</h3>
+                        <ul class="cart-product-list-title">
+                            <li class="cart-product-list-item">Price:<span class="list-item-price">300$</span></li>
+                            <li class="cart-product-list-item">Color: <span>Red</span> </li>
+                            <li class="cart-product-list-item">Size:<span>Xl</span></li>
+                            <li class="cart-product-list-item">Quantity:</li>
+                        </ul>
                     </div>
-                </form>
+                    <button class="cart-product-btn"></button>
+                </article>
+                <article class="cart-product">
+                    <img class="cart-product-img" src="img/cart/pants.jpg" alt="breeches" height="306">
+                    <div class="cart-product-list">
+                        <h3>Mango people t-shirt</h3>
+                        <ul class="cart-product-list-title">
+                            <li class="cart-product-list-item">Price: <span>300$</span></li>
+                            <li class="cart-product-list-item">Color:<span>Red</span></li>
+                            <li class="cart-product-list-item">Size:<span>Xl</span></li>
+                            <li class="cart-product-list-item">Quantity:</li>
+                        </ul>
+                    </div>
+                    <button class="cart-product-btn"></button>
+                </article>
+                <div class="cart-left-buttons">
+                    <button>Clear shopping cart</button>
+                    <button>Continue shopping</button>
+                </div>
             </div>
-            <div class="reg-right">
-                <h3 class="reg-right-title">Loyalty has its perks</h3>
-                <p class="reg-right-txt">Get in on the loyalty program where you can earn points and unlock serious
-                    perks. Starting with these
-                    as soon as you join:</p>
-                <ul class="reg-right-list">
-                    <li class="reg-right-list-item">
-                        15% off welcome offer
-                    </li>
-                    <li class="reg-right-list-item">
-                        Free shipping, returns and exchanges on all orders
-                    </li>
-                    <li class="reg-right-list-item">
-                        $10 off a purchase on your birthday
-                    </li>
-                    <li class="reg-right-list-item">
-                        Early access to products
-                    </li>
-                    <li class="reg-right-list-item">
-                        Exclusive offers & rewards
-                    </li>
-                </ul>
+            <div class="cart-right">
+                <form class="cart-right-info" action="#" method="post">
+                    <fieldset>
+                        <legend>Shipping adress</legend>
+                        <input class="cart-right-info-txt" type="text" placeholder="Bangladesh">
+                        <input class="cart-right-info-txt" type="text" placeholder="State">
+                        <input class="cart-right-info-txt" type="text" placeholder="Postcode / Zip">
+                        <input class="cart-right-info-btn" type="submit" value="Get a quote">
+                    </fieldset>
+                </form>
+
+                <div class="cart-right-checkout">
+                    <p class="cart-right-checkout-item">Sub total<span>900$</span></p>
+                    <h3 class="cart-right-checkout-title">Grand total<span>900$</span></h3>
+                    <button class="cart-right-checkout-btn">
+                        Proceed to&nbsp;checkout
+                    </button>
+                </div>
             </div>
         </section>
     </main>

@@ -215,16 +215,20 @@
   padding: 22px 97px 62px 31px;
   box-sizing: border-box;
 }
-.cart-product-list-title {
-  width: 80%;
-  text-transform: uppercase;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.cart-product-list h3 {
   font-weight: normal;
   font-size: 24px;
   line-height: 29px;
   color: #222222;
+  text-transform: uppercase;
+  padding: 0 55px 0 0;
+  margin: 0;
+}
+.cart-product-list-title {
+  width: 80%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 .cart-product-list-item {
   text-transform: none;
