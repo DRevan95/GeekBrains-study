@@ -1,3 +1,4 @@
+/*====================Mixins======================*/
 /*================product=================*/
 .ware {
   margin: 0;
@@ -188,6 +189,8 @@
 
 .cart {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 128px;
 }
 .cart-product {
   position: relative;
@@ -313,4 +316,263 @@
 .cart-left-buttons button:active {
   background-color: #6f6e6e;
   color: #ff000e;
-}/*# sourceMappingURL=style.css.map */
+}
+.cart-right {
+  max-width: 360px;
+  width: 100%;
+}
+.cart-right-info {
+  margin: 18px 0 57px 0;
+}
+.cart-right-info fieldset {
+  border: none;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+.cart-right-info-txt {
+  display: block;
+  width: 100%;
+  height: 45px;
+  padding: 13px 17px 16px 17px;
+  box-sizing: border-box;
+  border: 1px solid #a4a4a4;
+  margin: 20px 0 0 0;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #b1b1b1;
+}
+.cart-right-info-txt:focus {
+  color: #222222;
+}
+.cart-right-info-btn {
+  margin: 23px 0 0 0;
+  width: 100px;
+  height: 34px;
+  text-transform: uppercase;
+  padding: 0;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4a4a4a;
+  border: 1px solid #a4a4a4;
+  background-color: transparent;
+}
+.cart-right-info-btn:hover {
+  background-color: #a4a4a4;
+  color: #ffffff;
+}
+.cart-right-info-btn:active {
+  background-color: transparent;
+  color: #a4a4a4;
+}
+.cart-right-checkout {
+  background: #f5f3f3;
+  max-width: 360px;
+  width: 100%;
+  height: 214px;
+  padding: 39px 34px 42px 34px;
+  box-sizing: border-box;
+  text-align: end;
+  text-transform: uppercase;
+}
+.cart-right-checkout-item {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4a4a4a;
+  margin: 0 0 12px 0;
+}
+.cart-right-checkout-item span {
+  margin: 0 0 0 26px;
+}
+.cart-right-checkout-title {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  position: relative;
+  margin: 0 0 39px 0;
+}
+.cart-right-checkout-title span {
+  margin: 0 0 0 26px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f16d7f;
+}
+.cart-right-checkout-title::after {
+  content: "";
+  display: block;
+  width: 275px;
+  height: 1px;
+  background-color: #e2e2e2;
+  position: absolute;
+  bottom: -21px;
+  right: 8px;
+}
+.cart-right-checkout-btn {
+  display: block;
+  width: 273px;
+  height: 50px;
+  margin: 0 auto;
+  border: none;
+  background: #f16d7f;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.cart-right-checkout-btn:hover {
+  border: 1px solid black;
+  background-color: #ffffff;
+  color: #f16d7f;
+}
+.cart-right-checkout-btn:active {
+  border: none;
+  background: #f16d7f;
+  color: #ffffff;
+}
+
+/*==================End cart=====================*/
+/*===================Registration==================*/
+.registration {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 96px;
+}
+.registration .reg-form {
+  max-width: 360px;
+}
+.registration .reg-form-border {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.registration .reg-form-border:nth-child(2) {
+  margin: 33px 0 36px 0;
+}
+.registration .reg-form-gender {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13.2px;
+  color: #000000;
+  padding: 0 0 0 20px;
+}
+.registration .reg-form-gender input {
+  margin: 0 10px 0 0;
+}
+.registration .reg-form-gender:last-child {
+  display: none;
+}
+.registration .reg-form-title {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+.registration .reg-form-item {
+  display: block;
+  width: 100%;
+  height: 45px;
+  padding: 13px 17px 16px 17px;
+  box-sizing: border-box;
+  border: 1px solid #a4a4a4;
+  margin: 20px 0 0 0;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #b1b1b1;
+}
+.registration .reg-form-item:focus {
+  color: #222222;
+}
+.registration .reg-form-txt {
+  display: block;
+  margin: 15px 0 39px 0;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #b1b1b1;
+}
+.registration .reg-form-button {
+  position: relative;
+  width: 167px;
+}
+.registration .reg-form-button-arrow {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: #ffffff;
+}
+.registration .reg-form-btn {
+  border: none;
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: #f16d7f;
+  color: #fff;
+  padding: 16px 66px 17px 29px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+.registration .reg-form-btn:hover {
+  background-color: #4a4a4a;
+  color: #f16d7f;
+}
+.registration .reg-form-btn:hover ~ .reg-form-button-arrow {
+  fill: #f16d7f;
+}
+.registration .reg-form-btn:active {
+  background-color: #f16d7f;
+  color: #fff;
+}
+.registration .reg-form-btn:active ~ .reg-form-button-arrow {
+  fill: #fff;
+}
+.registration .reg-right {
+  max-width: 652px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.registration .reg-right-title {
+  margin: 0;
+  font-weight: 300;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.registration .reg-right-txt {
+  margin: 22px 0 21px 0;
+}
+.registration .reg-right-list {
+  list-style: none;
+  padding: 0 0 0 43px;
+  margin: 0;
+}
+.registration .reg-right-list-item {
+  position: relative;
+}
+.registration .reg-right-list-item::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 16px;
+  background: url(../img/mark.svg) no-repeat;
+  position: absolute;
+  top: 8px;
+  left: -40px;
+}
+.registration .reg-right-list-item:not(:last-child) {
+  margin: 0 0 16px 0;
+}
+
+/*======================End Registration============*//*# sourceMappingURL=style.css.map */

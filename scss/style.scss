@@ -1,3 +1,21 @@
+/*====================Mixins======================*/
+@mixin input-text {
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 13px 17px 16px 17px;
+    box-sizing: border-box;
+    border: 1px solid #a4a4a4;
+    margin: 20px 0 0 0;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #b1b1b1; 
+}
+
+@mixin input-focus {
+    color: #222222;
+}
 /*================product=================*/
 .ware{
     margin: 0;
@@ -215,6 +233,8 @@
 
 .cart{
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 128px;
 
     &-product{
         position: relative;
@@ -365,4 +385,287 @@
             }
         }
     }
+
+    &-right{
+        max-width: 360px;
+        width: 100%;
+
+        &-info {
+            margin: 18px 0 57px 0;
+
+            & fieldset{
+                border: none;
+                text-transform: uppercase;
+                padding: 0;
+                margin: 0;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #222222;
+            }
+
+            &-txt {
+                @include input-text();
+
+                &:focus{
+                    @include input-focus();
+                }
+            }
+
+            &-btn {
+                margin: 23px 0 0 0;
+                width: 100px;
+                height: 34px;
+                text-transform: uppercase;
+                padding: 0;
+                font-weight: 300;
+                font-size: 11px;
+                line-height: 13px;
+                color: #4a4a4a;
+                border: 1px solid #a4a4a4;
+                background-color: transparent;
+
+                &:hover{
+                    background-color: #a4a4a4;
+                    color: #ffffff;
+                }
+
+                &:active{
+                    background-color: transparent;
+                    color: #a4a4a4;
+                }
+            }
+        }
+
+        &-checkout{
+            background: #f5f3f3;
+            max-width: 360px;
+            width: 100%;
+            height: 214px;
+            padding: 39px 34px 42px 34px;
+            box-sizing: border-box;
+            text-align: end;
+            text-transform: uppercase;
+
+            &-item{
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 13px;
+                color: #4a4a4a;
+                margin: 0 0 12px 0;
+                
+
+                & span{
+                    margin: 0 0 0 26px;
+                }
+            }
+
+            &-title{
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #222222;
+                position: relative;
+                margin: 0 0 39px 0;
+                
+
+                & span{
+                    margin: 0 0 0 26px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #f16d7f;
+                }
+
+                &::after{
+                    content: "";
+                    display: block;
+                    width: 275px;
+                    height: 1px;
+                    background-color: #e2e2e2;
+                    position: absolute;
+                    bottom: -21px;
+                    right: 8px;
+
+                }
+            }
+
+            &-btn{
+                display: block;
+                width: 273px;
+                height: 50px;
+                margin: 0 auto;
+                border: none;
+                background: #f16d7f;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #ffffff;
+                text-transform: uppercase;
+
+                &:hover{
+                    border: 1px solid black;
+                    background-color: #ffffff;
+                    color: #f16d7f;
+                }
+
+                &:active{
+                    border: none;
+                    background: #f16d7f;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
 }
+
+/*==================End cart=====================*/
+
+/*===================Registration==================*/
+.registration{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 96px;
+    .reg-form{
+        max-width: 360px;
+
+        &-border{
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        &-border:nth-child(2){
+            margin: 33px 0 36px 0;
+        }
+
+        &-gender{
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13.2px;
+            color: #000000;
+            padding: 0 0 0 20px;
+
+            & input{
+                margin: 0 10px 0 0;
+            }
+        }
+
+        &-gender:last-child{
+            display: none;
+        }
+
+        &-title{
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+        }
+
+        &-item{
+            @include input-text();
+
+            &:focus{
+                @include input-focus();
+            }
+        }
+        &-txt{
+            display: block;
+            margin: 15px 0 39px 0;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #b1b1b1;
+        }
+
+        &-button{
+            position: relative;
+            width: 167px;
+
+            &-arrow{
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                fill: #ffffff;
+            }
+        }
+
+        &-btn{
+            border: none;
+            display: block;
+            width: 100%;
+            height: 50px;
+            background-color: #f16d7f;
+            color: #fff;
+            padding: 16px 66px 17px 29px;
+            box-sizing: border-box;
+            text-transform: uppercase;
+
+            &:hover{
+                background-color: #4a4a4a;
+                color: #f16d7f;
+            }
+
+            &:hover ~ .reg-form-button-arrow{
+                fill: #f16d7f;
+            }
+
+            &:active{
+                background-color: #f16d7f;
+                color: #fff;
+            }
+
+            &:active ~ .reg-form-button-arrow{
+                fill: #fff;
+            }
+        }
+    }
+
+    .reg-right{
+        max-width: 652px;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+
+        &-title{
+            margin: 0;
+            font-weight: 300;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+
+        &-txt{
+            margin: 22px 0 21px 0;
+        }
+
+        &-list{
+            list-style: none;
+            padding: 0 0 0 43px;
+            margin: 0;
+
+            &-item{
+                position: relative;
+                &::before{
+                    content: "";
+                    display: block;
+                    width: 20px;
+                    height: 16px;
+                    background: url(../img/mark.svg) no-repeat;
+                    position: absolute;
+                    top: 8px;
+                    left: -40px;
+                }
+            }
+
+            &-item:not(:last-child){
+                margin: 0 0 16px 0;
+            }
+        }
+    }
+}
+
+/*======================End Registration============*/
+
+
