@@ -579,4 +579,10 @@
   margin: 0 0 16px 0;
 }
 
-/*======================End Registration============*//*# sourceMappingURL=style.css.map */
+/*======================End Registration============*/
+/*=======================@media=====================*/
+@media (max-width: 1140px) {
+  .container {
+    margin: 0 16px 0 16px;
+  }
+}/*# sourceMappingURL=style.css.map */
