@@ -256,7 +256,7 @@
         }
 
         &-list{
-            max-width: 390px;
+            max-width: 472px;
             width: 100%;
             background: #FFFFFF;
             padding: 22px 97px 62px 31px;
@@ -392,10 +392,11 @@
     }
 
     &-right{
-        max-width: 360px;
-        width: 100%;
+        min-width: 360px;
 
         &-info {
+            max-width: 360px;
+            width: 100%;
             margin: 18px 0 57px 0;
 
             & fieldset{
@@ -533,6 +534,7 @@
     margin-bottom: 96px;
     .reg-form{
         max-width: 360px;
+        width: 100%;
 
         &-border{
             border: none;
@@ -675,4 +677,193 @@
 
 /*=======================@media=====================*/
 
+@media (max-width: 1140px){
+    .ware-carousel{
+        height: 624px;
+        background-size: contain;
+    }
 
+    .ware-info{
+        margin: 0 0 128px 0;
+        padding: 65px 0 65px 0;
+
+        &-article{
+            max-width: 555px;
+            width: 100%;
+        }
+
+        &-price{
+            max-width: 642px;
+            width: 100%;
+
+            &::after{
+                width: 100%;
+                left: 0px;
+            }
+        }
+    }
+
+    .first-hiden-card{
+        display: none;
+    }
+
+    .cart{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto 128px auto;
+
+        &-left{
+            max-width: 734px;
+            margin-bottom: 62px;
+
+            &-buttons{
+                justify-content: space-evenly;
+            }
+        }
+
+        &-product-list{
+            padding-right: 179px;
+        }
+
+        &-right{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            &-info{
+                margin: 0;
+            }
+
+            &-checkout{
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .registration{
+        margin: 0 auto 96px auto;
+        padding: 0px 16px 0px 16px;
+        box-sizing: border-box;
+        & .reg-right{
+            width: 354px;
+            font-size: 16px;
+            line-height: 19px;
+
+            &-title{
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+        & .reg-form-border:nth-child(2){
+            display: flex;
+        }
+        & .reg-form-gender{
+            display: block;
+        }
+        & .reg-form-gender:last-child{
+            display: block;
+        }
+        
+
+    }
+}
+
+@media (max-width:719px){
+    .first-hiden-card{
+        display: block;
+    }
+    .second-hiden-card{
+        display: none;
+    }
+
+    .cart-heading{
+        text-align: center;
+    }
+
+    .cart{
+        margin-bottom: 96px;
+        padding: 0 8px 0 8px;
+        box-sizing: border-box;
+
+        &-product{
+            height: 188px;
+            width: 358px;
+
+            &-btn::after,
+            &-btn::before{
+                width: 12px;
+                height: 2px;
+                top: -7px;
+                left: 174px;
+            }
+
+
+            &-list{
+                padding: 13.5px 53.3px 37.7px 17px;
+
+                & h3{
+                    padding: 0;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+
+                &-item{
+                    font-size: 14px;
+                    line-height: 17px;
+
+                    &:first-child{
+                        margin-top: 26px;
+                    }
+
+                    &:not(:last-child){
+                        margin-bottom: 4px;
+                    }
+
+                    &:last-child::after{
+                        width: 24.1px;
+                        height: 15.3px;
+                        right: 0px;
+                        font-size: 10px;
+                        line-height: 12px;
+                    }
+                }
+            }
+        }
+
+        &-left{
+
+            &-buttons {
+                justify-content: space-between;
+            }
+            & button{
+                width: 175px;
+                height: 33px;
+            }
+        }
+
+        &-right{
+            flex-direction: column;
+
+            &-checkout{
+                margin-top: 48px;
+            }
+        }
+    }
+
+    .registration{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 8px 0 8px;
+
+        &-left{
+            margin-bottom: 40px;
+        }
+
+        & .reg-right{
+            max-width: 358px;
+            width: 100%;
+        }
+    }
+}

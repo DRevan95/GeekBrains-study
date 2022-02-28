@@ -718,6 +718,7 @@ input:focus-visible{
 .products-filter-list{
     z-index: 2;
     display: none;
+    min-width: 360px;
     width: 100%;
     position: absolute;
     top: 0;
@@ -984,7 +985,7 @@ input:focus-visible{
         margin: 0;
     }
 
-    .products .list{
+    .list{
         justify-content: space-evenly;
     }
     .products-card{
@@ -1112,6 +1113,47 @@ input:focus-visible{
     .networks-list{
         margin: 0;
         padding: 0;
+    }
+
+    .arrivals .container{
+        flex-direction: column;
+        padding: 24px 0 46px 0;
+        box-sizing: border-box;
+    }
+    .arrivals-title{
+        margin: 0;
+    }
+
+    .products-filter-btn span{
+        display: none;
+    }
+    .products-filter-btn svg{
+        width: 37.5px;
+        height: 25px;
+    }
+
+    .products-filters-item:not(:first-child){
+        margin: 0px 0px 0px 43px;
+    }
+
+    .item-btn{
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .products-filters{
+        margin: 0px 27px 0px 0px;
+    }
+
+    .products-filters svg{
+        top: 3px;
+    }
+
+    .trending{
+        width: 96px;
+    }
+    .trending svg{
+        left: 103px;
     }
 }
 
